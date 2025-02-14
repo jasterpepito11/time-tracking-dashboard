@@ -28,8 +28,9 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![desktop ](./desktop.png)
 
+![mobile ](./mobile-375px.png)
 ### Links
 
 - Solution URL: [Add solution URL here](https://github.com/jasterpepito11/time-tracking-dashboard)
