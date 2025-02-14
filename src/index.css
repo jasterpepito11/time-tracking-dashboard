@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --text-rubik: 'Rubik', sans-serif;
+  --color-profile: hsl(246, 80%, 60%);
+  --color-work: hsl(15, 100%, 70%);
+  --color-play: hsl(195, 74%, 62%);
+  --color-study: hsl(348, 100%, 68%);
+  --color-exercise: hsl(145, 58%, 55%);
+  --color-social: hsl(264, 64%, 52%);
+  --color-self-care: hsl(43, 84%, 65%);
+  --color-dark-blue: hsl(235, 46%, 20%);
+  --color-very-dark-blue: hsl(226, 43%, 10%);
+  --color-desaturated-blue: hsl(235, 45%, 61%);
+  --color-pale-blue: hsl(236, 100%, 87%);
+  --text-base: 18px;
+}
+:root {
+  font-family: Rubik, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 300;
+  tab-size: 0;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+html {
+  @apply h-full text-base;
+}
+
+body {
+  @apply h-full flex justify-center m-0 place-items-center bg-very-dark-blue;
+  min-width: 320px;
+  min-height: 100dvh;
+  overflow-y: scroll;
+}
+main {
+  @apply h-full w-full flex flex-col items-center justify-center text-white ;
+}
+section {
+  margin-inline: min(1.5rem, 8%);
+  width: calc(100% - 2rem *2);
+}
+
+.bg-image-work {
+  background-image: url(./assets/images/icon-work.svg);
+}
+.bg-image-play {
+  background-image: url(./assets/images/icon-play.svg);
+}
+.bg-image-exercise {
+  background-image: url(./assets/images/icon-exercise.svg);
+}
+.bg-image-self-care {
+  background-image: url(./assets/images/icon-self-care.svg);
+}
+.bg-image-social {
+  background-image: url(./assets/images/icon-social.svg);
+}
+.bg-image-study {
+  background-image: url(./assets/images/icon-study.svg);
+}
+.activated {
+  @apply text-white;
+}
